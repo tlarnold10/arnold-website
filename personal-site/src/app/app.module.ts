@@ -6,19 +6,28 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './navigation/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component'
+import { AboutComponent } from './about/about.component'
+import { RouterModule } from '@angular/router';
+import { ExperienceComponent } from './experience/experience.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    RouterModule.forRoot([
+      {path: '', component: HomeComponent},
+      {path: 'about', component: AboutComponent},
+      {path: 'experience', component: ExperienceComponent}
+    ])
   ],
   providers: [],
-  bootstrap: [AppComponent, NavComponent, FooterComponent, HomeComponent]
+  bootstrap: [AppComponent, NavComponent, FooterComponent, HomeComponent, AboutComponent, ExperienceComponent]
 })
 export class AppModule { }
