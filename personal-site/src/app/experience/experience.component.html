@@ -8,37 +8,7 @@
         <br>
         <p>I've done some shit, even at a young age.</p>
         <ul class="uk-list uk-list-striped">
-            <li>
-                Graduate from Augustana College in Sioux Falls. Computer Information System and 
-                Business Administration. 2014 graduate.
-            </li>
-            <li>
-                Sales Account Executive at Omnitech.
-            </li>
-            <li>
-                Start MBA program at University of South Dakota.
-            </li>
-            <li>
-                Data conversion engineer at Zuercher Technologies in Sioux Falls.
-            </li>
-            <li>
-                Zuercher Technologies becomes CentralSquare Technologies.
-            </li>
-            <li>
-                Data conversion manager at CentralSquare Technologies.
-            </li>
-            <li>
-                Graduate from USD with Masters of Business Administration, December 2019.
-            </li>
-            <li>
-                Move to Lester, IA
-            </li>
-            <li>
-                Starting up Arnold Technologies.
-            </li>
-            <li>
-                Software engineering manager at CentralSquare Technologies.
-            </li>
+            <li *ngFor="let experience of experiences">{{ experience }}</li>
         </ul>
     </div>
     <br>
