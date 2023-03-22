@@ -1,0 +1,11 @@
+<div class="uk-container">
+    <div *ngFor="let blog of blogs">
+        <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m">
+            <img src="{{ blog.headerImage }}">
+            <h2>{{ blog.title }}</h2>
+            <h5><em>By: Trevor Arnold @ {{ blog.publishDate }}</em></h5>
+            <p>{{ blog.content }}</p>
+        </div>
+        <br>
+    </div>
+</div>
