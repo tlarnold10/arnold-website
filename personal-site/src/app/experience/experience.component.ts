@@ -18,7 +18,8 @@ export class ExperienceComponent {
             "Graduate from USD with Masters of Business Administration, December 2019.",
             "Move to Lester, IA",
             "Starting up Arnold Technologies.",
-            "Software engineering manager at CentralSquare Technologies."
+            "Software engineering manager at CentralSquare Technologies.",
+            "Software engineer at Frontier Technology Inc."
         ];
     }
 }
