@@ -10,7 +10,9 @@ import { HomeComponent } from './home/home.component'
 import { AboutComponent } from './about/about.component'
 import { ExperienceComponent } from './experience/experience.component'
 import { ProjectsComponent } from './projects/projects.component'
-import { ArnoldTechComponent } from './arnoldtech/arnoldtech.component'
+import { ArnoldTechComponent } from './arnoldtech/arnoldtech.component';
+import { BlogComponent } from './blog/blog/blog.component'
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,16 +23,19 @@ import { ArnoldTechComponent } from './arnoldtech/arnoldtech.component'
     AboutComponent,
     ExperienceComponent,
     ProjectsComponent,
-    ArnoldTechComponent
+    ArnoldTechComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {path: '', component: HomeComponent},
       {path: 'about', component: AboutComponent},
       {path: 'experience', component: ExperienceComponent},
       {path: 'projects', component: ProjectsComponent},
-      {path: 'arnoldtech', component: ArnoldTechComponent}
+      {path: 'arnoldtech', component: ArnoldTechComponent},
+      {path: 'blog', component: BlogComponent}
     ])
   ],
   providers: [],
