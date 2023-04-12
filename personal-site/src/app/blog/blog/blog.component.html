@@ -4,10 +4,7 @@
             <img src="{{ blog.headerImage }}" style="width:100%">
             <h2>{{ blog.title }}</h2>
             <h5><em>By: Trevor Arnold @ {{ blog.publishDate }}</em></h5>
-            <div *ngFor="let p of blog.content.split('\n')">
-                <p>
-                    {{ p }}
-                </p>
+            <div [innerHTML]="blog.content">
             </div>
         </div>
         <br>
