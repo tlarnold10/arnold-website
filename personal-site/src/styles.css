@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+.header-section {
+    width: 40%;
+    padding: 1em 0em;
+    background-color: #000000;
+    border-radius: 15px;
+    opacity: .8;
+}
