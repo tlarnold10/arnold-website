@@ -9,6 +9,8 @@ export class ArnoldTechComponent {
 
     constructor() {
         this.services = [
+            "Startup CTO (if the right fit)",
+            "Startup MVP Development",
             "Software Development and Engineering",
             "Data Analytics",
             "Technology Strategy Consulting"
