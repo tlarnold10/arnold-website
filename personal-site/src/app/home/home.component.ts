@@ -13,11 +13,11 @@ export class HomeComponent {
         
         if(this.currentTime.includes("AM"))
         {
-            this.timeOfDay = "Morning";
+            this.timeOfDay = "Good Morning";
         }
         else
         {
-            this.timeOfDay = "Afternoon"
+            this.timeOfDay = "Good Afternoon"
         }
     }
 }
