@@ -8,3 +8,6 @@ This one is written in typescript using the angular framework.
 3. Push to GitHub and merge with the `github_pages` branch. 
 4. Check the actions tab to make sure deployment went as expected, should provide you with a URL to test with. 
 5. If everything looks good and is working, merge your updates into the `main` branch. 
+
+# Development
+Run `npm run start` from the `personal-site` directory.
